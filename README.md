@@ -25,8 +25,20 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 ## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-=======
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference]
 # basalt-assessment
 Angular app that is using APIs from rapidapi.com
->>>>>>> d16e77c4f39c818c6c3b12e65da550c4da51f100
+
+## Overview
+The Quote Application is a web application that allows users to view a list of famous quotes and add new quotes to the list. It's built with Angular 15 and uses Angular Material for UI components.
+
+## Features
+Quote List: Display a list of quotes with author and category information.
+Add Quote: Allows users to submit
+new quotes, which are then added to the list.
+
+## Development Environment Setup
+Prerequisites: Node.js (version 16.x or later) and npm (version 8.x or later).
+Framework: Angular 15.
+UI Components: Angular Material.
+To set up the development environment, clone the repository and run npm install to install dependencies. Use ng serve to run a development server.
