@@ -1,0 +1,36 @@
+<mat-card>
+    <h1 class="heading">Add Quote</h1>
+    <form [formGroup]="quoteForm" (ngSubmit)="onSubmit()" class="quote-form">
+        <mat-form-field appearance="fill">
+            <mat-label>Quote</mat-label>
+            <input matInput formControlName="quote" placeholder="Enter quote">
+            <mat-error
+                *ngIf="quoteForm.controls['quote'].invalid && (quoteForm.controls['quote'].dirty || quoteForm.controls['quote'].touched)">
+                Quote is required.
+            </mat-error>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+            <mat-label>Author</mat-label>
+            <input matInput formControlName="author" placeholder="Enter author">
+            <mat-error
+                *ngIf="quoteForm.controls['author'].invalid && (quoteForm.controls['author'].dirty || quoteForm.controls['author'].touched)">
+                Author is required.
+            </mat-error>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+            <mat-label>Category</mat-label>
+            <input matInput formControlName="category" placeholder="Enter category">
+            <mat-error
+                *ngIf="quoteForm.controls['category'].invalid && (quoteForm.controls['category'].dirty || quoteForm.controls['category'].touched)">
+                Category is required.
+            </mat-error>
+        </mat-form-field>
+
+        <div class="form-buttons">
+            <button mat-raised-button color="primary" type="submit" [disabled]="!quoteForm.valid">Create</button>
+            <button mat-raised-button color="basic" type="submit" (click)="goBack()">Back</button>
+        </div>
+    </form>
+</mat-card>
